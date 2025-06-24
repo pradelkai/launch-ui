@@ -1,13 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import * as React from "react";
-import { ReactNode } from "react";
+import Link from "next/link";
 
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-
-import LaunchUI from "../logos/launch-ui";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -17,6 +13,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "./navigation-menu";
+import LaunchUI from "../logos/launch-ui";
+import { ReactNode } from "react";
 
 interface ComponentItem {
   title: string;
@@ -58,7 +56,7 @@ export default function Navigation({
     {
       title: "Documentation",
       isLink: true,
-      href: siteConfig.url,
+      href: "https://www.launchuicomponents.com/",
     },
   ],
   components = [
@@ -101,22 +99,22 @@ export default function Navigation({
   logo = <LaunchUI />,
   logoTitle = "Launch UI",
   logoDescription = "Landing page template built with React, Shadcn/ui and Tailwind that you can copy/paste into your project.",
-  logoHref = siteConfig.url,
+  logoHref = "https://www.launchuicomponents.com/",
   introItems = [
     {
       title: "Introduction",
-      href: siteConfig.url,
+      href: "https://www.launchuicomponents.com/",
       description:
         "Re-usable components built using Radix UI and Tailwind CSS.",
     },
     {
       title: "Installation",
-      href: siteConfig.url,
+      href: "https://www.launchuicomponents.com/",
       description: "How to install dependencies and structure your app.",
     },
     {
       title: "Typography",
-      href: siteConfig.url,
+      href: "https://www.launchuicomponents.com/",
       description: "Styles for headings, paragraphs, lists...etc",
     },
   ],

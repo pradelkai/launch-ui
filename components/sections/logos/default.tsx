@@ -1,15 +1,13 @@
 import { ReactNode } from "react";
 
-import { siteConfig } from "@/config/site";
-
 import Figma from "../../logos/figma";
 import React from "../../logos/react";
 import ShadcnUi from "../../logos/shadcn-ui";
 import Tailwind from "../../logos/tailwind";
 import TypeScript from "../../logos/typescript";
-import { Badge } from "../../ui/badge";
 import Logo from "../../ui/logo";
 import { Section } from "../../ui/section";
+import { Badge } from "../../ui/badge";
 
 interface LogosProps {
   title?: string;
@@ -22,7 +20,7 @@ export default function Logos({
   title = "Built with industry-standard tools and best practices",
   badge = (
     <Badge variant="outline" className="border-brand/30 text-brand">
-      Last updated: {siteConfig.stats.updated}
+      Last updated: 1000
     </Badge>
   ),
   logos = [

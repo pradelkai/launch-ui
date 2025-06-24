@@ -1,9 +1,8 @@
 "use client";
 
-import { ChevronsUpDownIcon } from "lucide-react";
-import { useTheme } from "next-themes";
 import * as React from "react";
-import { useEffect,useState } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 
 import { Button } from "./button";
 import {
@@ -12,6 +11,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./dropdown-menu";
+import { ChevronsUpDownIcon } from "lucide-react";
 
 export function ModeToggle() {
   const [mounted, setMounted] = useState(false);

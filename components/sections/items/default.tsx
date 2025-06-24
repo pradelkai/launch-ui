@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import {
   BlocksIcon,
   EclipseIcon,
@@ -8,9 +9,8 @@ import {
   ScanFaceIcon,
   SquarePenIcon,
 } from "lucide-react";
-import { ReactNode } from "react";
 
-import { Item, ItemDescription,ItemIcon, ItemTitle } from "../../ui/item";
+import { Item, ItemIcon, ItemTitle, ItemDescription } from "../../ui/item";
 import { Section } from "../../ui/section";
 
 interface ItemProps {
@@ -26,49 +26,51 @@ interface ItemsProps {
 }
 
 export default function Items({
-  title = "Everything you need. Nothing you don't.",
+  title = "Superdone gives super powers to your pm's",
   items = [
     {
-      title: "Accessibility first",
-      description: "Fully WCAG 2.0 compliant, made with best a11y practices",
+      title: "Improve Meeting Culture",
+      description:
+        "Better meetings with collaborative agendas before every meeting.",
       icon: <ScanFaceIcon className="size-5 stroke-1" />,
     },
     {
-      title: "Responsive design",
-      description: "Looks and works great on any device and screen size",
+      title: "Connect your calendar",
+      description:
+        "Sync with your calendar to pick the meetings you want to analyze.",
       icon: <MonitorSmartphoneIcon className="size-5 stroke-1" />,
     },
     {
-      title: "Light and dark mode",
+      title: "Categorize by Project",
       description:
-        "Seamless switching between color schemes, 6 themes included",
+        "Meeting summaries, actions, and decisions categorized by project.",
       icon: <EclipseIcon className="size-5 stroke-1" />,
     },
     {
-      title: "Easy to customize",
-      description: "Flexible options to match your product or brand",
+      title: "Set Alerts",
+      description:
+        "Be notified when projects are at risk or key decisions are made.",
       icon: <BlocksIcon className="size-5 stroke-1" />,
     },
     {
-      title: "Top-level performance",
-      description: "Made for lightning-fast load times and smooth interactions",
+      title: "Talk to your projects",
+      description:
+        "Connect your Slack channels to ask questions and get updates.",
       icon: <FastForwardIcon className="size-5 stroke-1" />,
     },
     {
-      title: "Production ready",
-      description: "Thoroughly tested and launch-prepared",
+      title: "Share updates across teams",
+      description: "Connect information silos across teams for zero latency.",
       icon: <RocketIcon className="size-5 stroke-1" />,
     },
     {
-      title: "Made for localisation",
-      description:
-        "Easy to implement support for multiple languages and regions",
+      title: "Your 360° project view",
+      description: "Know who is working on what, and what they're working on.",
       icon: <LanguagesIcon className="size-5 stroke-1" />,
     },
     {
-      title: "CMS friendly",
-      description:
-        "Built to work with your any headless content management system",
+      title: "On-and-Offboarding",
+      description: "Retain institutional knowledge and reduce onboarding time.",
       icon: <SquarePenIcon className="size-5 stroke-1" />,
     },
   ],

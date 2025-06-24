@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-
 import { cn } from "@/lib/utils";
 
 interface ScreenshotProps {

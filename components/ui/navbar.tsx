@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { cn } from "@/lib/utils";
 
 function Navbar({ className, ...props }: React.ComponentProps<"nav">) {
@@ -42,4 +41,4 @@ function NavbarCenter({ className, ...props }: React.ComponentProps<"nav">) {
   );
 }
 
-export { Navbar, NavbarCenter,NavbarLeft, NavbarRight };
+export { Navbar, NavbarLeft, NavbarRight, NavbarCenter };

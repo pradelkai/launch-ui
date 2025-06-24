@@ -1,16 +1,15 @@
 import { ReactNode } from "react";
-
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import LaunchUI from "../../logos/launch-ui";
+import { ModeToggle } from "../../ui/mode-toggle";
 import {
   Footer,
-  FooterBottom,
   FooterColumn,
+  FooterBottom,
   FooterContent,
 } from "../../ui/footer";
-import { ModeToggle } from "../../ui/mode-toggle";
+import LaunchUI from "../../logos/launch-ui";
+import SuperdoneLogo from "../../logos/superdone";
 
 interface FooterLink {
   text: string;
@@ -33,37 +32,37 @@ interface FooterProps {
 }
 
 export default function FooterSection({
-  logo = <LaunchUI />,
-  name = "Launch UI",
+  logo = <SuperdoneLogo />,
+  name = "",
   columns = [
     {
       title: "Product",
       links: [
-        { text: "Changelog", href: siteConfig.url },
-        { text: "Documentation", href: siteConfig.url },
+        { text: "Changelog", href: "https://www.launchuicomponents.com/" },
+        { text: "Documentation", href: "https://www.launchuicomponents.com/" },
       ],
     },
     {
       title: "Company",
       links: [
-        { text: "About", href: siteConfig.url },
-        { text: "Careers", href: siteConfig.url },
-        { text: "Blog", href: siteConfig.url },
+        { text: "About", href: "https://www.launchuicomponents.com/" },
+        { text: "Careers", href: "https://www.launchuicomponents.com/" },
+        { text: "Blog", href: "https://www.launchuicomponents.com/" },
       ],
     },
     {
       title: "Contact",
       links: [
-        { text: "Discord", href: siteConfig.url },
-        { text: "Twitter", href: siteConfig.url },
-        { text: "Github", href: siteConfig.links.github },
+        { text: "Discord", href: "https://www.launchuicomponents.com/" },
+        { text: "Twitter", href: "https://www.launchuicomponents.com/" },
+        { text: "Github", href: "https://www.launchuicomponents.com/" },
       ],
     },
   ],
-  copyright = "© 2025 Mikołaj Dobrucki. All rights reserved",
+  copyright = "© 2025 Superdone, Inc. All rights reserved.",
   policies = [
-    { text: "Privacy Policy", href: siteConfig.url },
-    { text: "Terms of Service", href: siteConfig.url },
+    { text: "Privacy Policy", href: "https://www.launchuicomponents.com/" },
+    { text: "Terms of Service", href: "https://www.launchuicomponents.com/" },
   ],
   showModeToggle = true,
   className,

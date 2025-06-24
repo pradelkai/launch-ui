@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { cn } from "@/lib/utils";
 
 function Footer({ className, ...props }: React.ComponentProps<"div">) {
@@ -48,4 +47,4 @@ function FooterBottom({ className, ...props }: React.ComponentProps<"div">) {
   );
 }
 
-export { Footer, FooterBottom, FooterColumn, FooterContent };
+export { Footer, FooterColumn, FooterBottom, FooterContent };

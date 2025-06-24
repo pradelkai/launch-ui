@@ -1,5 +1,3 @@
-import { siteConfig } from "@/config/site";
-
 import { Section } from "../../ui/section";
 
 interface StatItemProps {
@@ -18,24 +16,24 @@ export default function Stats({
   items = [
     {
       label: "used by",
-      value: Math.round(siteConfig.stats.figma / 100) / 10,
+      value: Math.round(1000 / 100) / 10,
       suffix: "k",
       description: "designers on Figma Community",
     },
     {
       label: "over",
-      value: siteConfig.stats.github,
+      value: 1000,
       description: "clones and forks of the template on Github",
     },
     {
       label: "already",
-      value: Math.round(siteConfig.stats.cli / 100) / 10,
+      value: Math.round(1000 / 100) / 10,
       suffix: "k",
       description: "installations with shadcn/ui CLI",
     },
     {
       label: "includes",
-      value: siteConfig.stats.sections,
+      value: 1000,
       description: "blocks and sections",
     },
   ],

@@ -1,11 +1,9 @@
 import { ReactNode } from "react";
-
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
+import { Section } from "../../ui/section";
 import { Button, type ButtonProps } from "../../ui/button";
 import Glow from "../../ui/glow";
-import { Section } from "../../ui/section";
 
 interface CTAButtonProps {
   href: string;
@@ -25,7 +23,7 @@ export default function CTA({
   title = "Start building",
   buttons = [
     {
-      href: siteConfig.getStartedUrl,
+      href: "https://www.launchuicomponents.com/",
       text: "Get Started",
       variant: "default",
     },

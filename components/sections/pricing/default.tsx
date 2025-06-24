@@ -1,10 +1,8 @@
-import { User, Users } from "lucide-react";
-
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import { PricingColumn, PricingColumnProps } from "../../ui/pricing-column";
 import { Section } from "../../ui/section";
+import { User, Users } from "lucide-react";
+import { PricingColumn, PricingColumnProps } from "../../ui/pricing-column";
 
 interface PricingProps {
   title?: string | false;
@@ -44,14 +42,14 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access",
-        href: siteConfig.pricing.pro,
+        href: "https://www.launchuicomponents.com/",
       },
       features: [
-        `${siteConfig.stats.websiteTemplates} website templates`,
-        `${siteConfig.stats.appTemplates} app templates`,
-        `${siteConfig.stats.sections} blocks and sections`,
-        `${siteConfig.stats.illustrations} illustrations`,
-        `${siteConfig.stats.animations} custom animations`,
+        `$1000 website templates`,
+        `$1000 app templates`,
+        `$1000 blocks and sections`,
+        `$1000 illustrations`,
+        `$1000 custom animations`,
       ],
       variant: "glow-brand",
     },
@@ -64,7 +62,7 @@ export default function Pricing({
       cta: {
         variant: "default",
         label: "Get all-access for your team",
-        href: siteConfig.pricing.team,
+        href: "https://www.launchuicomponents.com/",
       },
       features: [
         "All the templates, components and sections available for your entire team",

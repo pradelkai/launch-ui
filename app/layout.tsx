@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Mikolaj Dobrucki",
-      url: "https://mikolajdobrucki.com",
+      name: "Superdone",
+      url: "https://superdone.ai",
     },
   ],
-  creator: "mikolajdobrucki",
+  creator: "Kai Pradel",
   openGraph: {
     type: "website",
     locale: "en_US",

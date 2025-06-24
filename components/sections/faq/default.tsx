@@ -1,15 +1,13 @@
-import Link from "next/link";
 import { ReactNode } from "react";
+import Link from "next/link";
 
-import { siteConfig } from "@/config/site";
-
+import { Section } from "../../ui/section";
 import {
   Accordion,
-  AccordionContent,
   AccordionItem,
   AccordionTrigger,
+  AccordionContent,
 } from "../../ui/accordion";
-import { Section } from "../../ui/section";
 
 interface FAQItemProps {
   question: string;
@@ -133,7 +131,7 @@ export default function FAQ({
             new features. If you are interested in exchanging feedback for a
             discount, please contact me via{" "}
             <a
-              href={siteConfig.links.email}
+              href="https://www.launchuicomponents.com/"
               className="underline underline-offset-2"
             >
               email

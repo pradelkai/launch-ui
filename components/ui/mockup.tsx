@@ -1,7 +1,6 @@
-import { cva, type VariantProps } from "class-variance-authority";
 import React from "react";
-
 import { cn } from "@/lib/utils";
+import { cva, type VariantProps } from "class-variance-authority";
 
 const mockupVariants = cva(
   "flex relative z-10 overflow-hidden shadow-2xl border border-border/70 dark:border-border/5 dark:border-t-border/15",
@@ -32,20 +31,22 @@ function Mockup({ className, type, ...props }: MockupProps) {
   );
 }
 
-const frameVariants = cva(
-  "bg-border/50 flex relative z-10 overflow-hidden rounded-2xl dark:bg-border/10",
-  {
-    variants: {
-      size: {
-        small: "p-2",
-        large: "p-4",
-      },
+const frameVariants = cva("flex relative z-10 overflow-hidden  rounded-2xl", {
+  variants: {
+    type: {
+      default: "bg-border/50 darl:bg-border/10",
+      noborder: "bg-transparent dark:bg-transparent",
     },
-    defaultVariants: {
-      size: "small",
+    size: {
+      small: "p-2",
+      large: "p-4",
     },
   },
-);
+  defaultVariants: {
+    size: "small",
+    type: "noborder",
+  },
+});
 
 export interface MockupFrameProps
   extends React.HTMLAttributes<HTMLDivElement>,

@@ -1,18 +1,17 @@
-import { Menu } from "lucide-react";
 import { ReactNode } from "react";
-
-import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { Menu } from "lucide-react";
 
-import LaunchUI from "../../logos/launch-ui";
+import Navigation from "../../ui/navigation";
 import { Button, type ButtonProps } from "../../ui/button";
 import {
   Navbar as NavbarComponent,
   NavbarLeft,
   NavbarRight,
 } from "../../ui/navbar";
-import Navigation from "../../ui/navigation";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
+import LaunchUI from "../../logos/launch-ui";
+import Superdone from "../../logos/superdone";
 
 interface NavbarLink {
   text: string;
@@ -40,19 +39,23 @@ interface NavbarProps {
 }
 
 export default function Navbar({
-  logo = <LaunchUI />,
-  name = "Launch UI",
-  homeUrl = siteConfig.url,
+  logo = <Superdone />,
+  name = "",
+  homeUrl = "https://www.launchuicomponents.com/",
   mobileLinks = [
-    { text: "Getting Started", href: siteConfig.url },
-    { text: "Components", href: siteConfig.url },
-    { text: "Documentation", href: siteConfig.url },
+    { text: "Getting Started", href: "https://www.launchuicomponents.com/" },
+    { text: "Components", href: "https://www.launchuicomponents.com/" },
+    { text: "Documentation", href: "https://www.launchuicomponents.com/" },
   ],
   actions = [
-    { text: "Sign in", href: siteConfig.url, isButton: false },
+    {
+      text: "Sign in",
+      href: "https://www.launchuicomponents.com/",
+      isButton: false,
+    },
     {
       text: "Get Started",
-      href: siteConfig.url,
+      href: "https://www.launchuicomponents.com/",
       isButton: true,
       variant: "default",
     },
